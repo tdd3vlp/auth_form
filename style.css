@@ -50,6 +50,7 @@ input {
   padding: 0 1.6rem;
 
   border: 1px solid #ccc;
+  outline: none;
 
   border-radius: 1rem;
 }
@@ -60,7 +61,7 @@ input:focus {
 
 input:focus + span {
   top: -20%;
-  left: 5%;
+  left: 14px;
 
   color: rgb(27, 123, 212);
   background-color: #fff;
@@ -79,7 +80,7 @@ span {
 }
 
 .button {
-  width: 35%;
+  width: 25%;
   height: 2.5rem;
 
   margin-top: 1rem;
@@ -88,11 +89,15 @@ span {
   align-items: center;
   justify-content: center;
 
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: black;
   background-color: #fff;
 
-  border: 1px solid #777;
+  border: 1px solid black;
   border-radius: 1rem;
+
+  transition: all 0.3s;
 }
 
 .button:hover {
@@ -101,5 +106,5 @@ span {
 
 .button:active {
   cursor: pointer;
-  background-color: #eee;
+  transform: scale(0.9);
 }
