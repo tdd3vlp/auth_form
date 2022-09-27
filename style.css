@@ -55,11 +55,13 @@ input {
   border-radius: 1rem;
 }
 
-input:focus {
+input:focus,
+input.filled {
   border-color: rgb(27, 123, 212);
 }
 
-input:focus + span {
+input:focus + span,
+input.filled + span {
   top: -20%;
   left: 14px;
 
